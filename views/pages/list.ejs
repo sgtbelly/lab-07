@@ -1,0 +1,21 @@
+<h2><%= title %></h2>
+<ul>
+  <% items.forEach(item => { %>
+    <li>
+      <form action="/category" method="post" class="disabled">
+        <input type="text" name="name" value="<%= item.name %>" disabled="true" />
+        <a href="#" class="formToggle">(e)</a>
+        <input type="hidden" name="_id" value="<%= item._id %>" />
+
+        <button name="_method" value="put">Save</button>
+        <button name="_method" value="delete">Delete</button>
+      </form>
+    </li>
+  <% }) %>
+</ul>
+
+<h3>Add New Category</h3>
+<form action="/category" method="post">
+  <input type="text" name="name" />
+  <button>Save</button>
+</form>

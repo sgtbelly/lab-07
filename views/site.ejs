@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/style/reset.css" />
+  <link rel="stylesheet" href="/style/style.css" />
+</head>
+<body>
+<header>
+  <h1>Awesome Website</h1>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/list">Categories</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <%- include(page) -%>
+</main>
+<footer>
+  &copy; 2018 John Cokos
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
