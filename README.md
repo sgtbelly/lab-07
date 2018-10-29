@@ -10,7 +10,7 @@
 **Web Server**
 
 * Modularize the server. Currently all of the code lives in the `lib/server.js` file.
-  * Move the routes out to a separate file:  `lib/routes.js`
+  * Move the routes out to a separate file:  `lib/home-routes.js`
   * Create a new agent library, to be used by routes that will touch the API
     * *This is that you can mock the agent for testing purposes...*
   * You'll note that the website already has forms and links in place to add, edit, and delete categories, but when used, they will not work -- the server is not yet setup to handle them.
